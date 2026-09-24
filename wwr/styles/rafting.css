@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-header {
-
-}
-
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -69,6 +65,14 @@ article {
     margin: 10px;
 }
 
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
+}
+
 .hero article img {
     float: right;
     width: 100px;
@@ -96,3 +100,6 @@ nav a {
     display: contents;
 }
 
+.social-media {
+    text-decoration: none;
+}
