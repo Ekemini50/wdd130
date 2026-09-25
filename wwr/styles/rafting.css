@@ -1,6 +1,6 @@
 :root{
-    --primary-color: ;
-    --secondary-color: ;
+    --primary-color: violet;
+    --secondary-color: black;
     --accent1-color: rgba(0, 147, 177, 0.963);
     --accent2-color: rgba(37, 89, 126);
     --heading-font: "Times New Roman", "Georgia", sefif;
@@ -91,15 +91,19 @@ h2 {
 }
 
 nav {
-    background-color: violet;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 nav a {
-    color: black;
+    color: var(--secondary-color);
     padding: 10px;
     display: contents;
+    text-decoration: none;
 }
 
 .social-media {
+    text-decoration: none;
+}
+footer a{
     text-decoration: none;
 }
