@@ -1,161 +1,134 @@
-:root{
-    --primary-color: violet;
-    --secondary-color: black;
-    --accent1-color: rgba(0, 147, 177, 0.963);
-    --accent2-color: rgba(37, 89, 126);
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    display: grid;
-}
-
-header {
+.site-header {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* logo auto width, nav fills rest */
     align-items: center;
     padding: 10px;
-    background-color: var(--primary-color);
-    border: 2px solid black;
-}
-
-
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1, h2 {
-    margin: 16px;
-    padding: 8px;
-
-}
-
-.social-media a {
-    text-decoration: none;
-    grid-template-columns: 2/3;
-}
-
-.hero {
-    position: relative;
-    box-sizing: border-box;
-}
-
-.hero img {
-    display: block;
-    width: 102%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.9;
-    background-color: var(--accent1-color);
-    color: white;
-    font-family: var(--heading-font);
-}
-
-article {
-    position: absolute;
-    background-color: var(--accent2-color);
-    width: 100%;
-    bottom: 20px;
-    opacity: 0.8;
-    color: white;
-    margin: 10px;
-}
-
-.hero h1 {
-    position: absolute;
-}
-
-.hero article {
-    position: absolute;
-}
-
-.hero article img {
-    float: right;
-    width: 100px;
-    padding: 10px;
-    border: 2px solid rgba(250, 187, 0, 1);
-    margin: 1px;
-}
-h2 {
-    background-color: var(--accent2-color);
-    text-align: center;
-    width: 100%;
+    background-color: #0093b1;
     color: #fff;
 }
- img {
-    align-items: center;
-}
 
-nav ul {
-
-    /*display: flex;
-    flex-wrap: wrap;
-    background-color: var(--primary-color);
-    padding: 10px;
-    justify-content: space-around;
-    align-items: center;*/
-}
-nav ul {
+.main-nav ul {
     display: flex;
     justify-content: flex-end;
-    /* push links to the right */
     gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
-    
 }
-    
 
-nav a {
-    color: var(--secondary-color);
-    padding: 10px;
-    display: inline-block;
+.main-nav a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    background-color: #fff;
 }
 
-.social-media a {
-    text-decoration: none;
-    margin: 0 5px;
-}
-footer a{
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: wrap;
-    background-color: var(--primary-color);
+.contact-info {
+    text-align: center;
 }
 
-.hero {
+.contact-section {
     display: grid;
-    align-items: center;
-}
-
-.history {
-    background-color: var(--accent2-color);
-    /* purple background */
-    color: #fff;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding: 20px;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    /*box-shadow: 0 8px 15px rgba(255, 75, 43, 0.3);
+    transition: all 0.3s ease;*/
+    height: 50px;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 15px rgba(255, 75, 43, 0.4);
+}
+
+legend {
+    font-weight: bold;
+}
+
+.team {
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.team .profiles {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.team h2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    /* fixed width */
+    height: 200px;
+    /* fixed height */
+    object-fit: cover;
+    /* crop nicely if photo isn’t square */
+    border-radius: 50%;
+    /* optional: circular profile look */
+} 
+
+footer {
+    background-color: #0093b1;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+footer p {
+    text-align: center;
+}
+
+
 
 
