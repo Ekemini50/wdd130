@@ -28,6 +28,10 @@ body {
     font-weight: bold;
 }
 
+.contact-info {
+    justify-content: center;
+}
+
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,6 +43,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+fieldset label {
+    font-weight: normal;
 }
 
 .contact-form input,
@@ -49,16 +62,43 @@ body {
 }
 
 .contact-form button {
-    background-color: #0093b1;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
     color: #fff;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 8px 15px rgba(255, 75, 43, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 50px;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 20px rgba(255, 75, 43, 0.4);
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(255, 75, 43, 0.4);
+}
+
+legend {
+    font-weight: bold;
+}
+
+.team {
+    border: 2px solid black;
+    margin-bottom: 20px;
 }
 
 .team .profiles {
     display: flex;
     gap: 20px;
     padding: 20px;
+    justify-content: center;
+}
+
+.team h2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .profile {
@@ -68,11 +108,28 @@ body {
     text-align: center;
 }
 
+.profile img {
+    width: 200px;
+    /* fixed width */
+    height: 200px;
+    /* fixed height */
+    object-fit: cover;
+    /* crop nicely if photo isn’t square */
+    border-radius: 50%;
+    /* optional: circular profile look */
+} 
+
 footer {
-    background-color: #333;
+    background-color: #0093b1;
     color: #fff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid black;
 }
+
+
+
+
+
